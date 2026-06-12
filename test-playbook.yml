@@ -1,0 +1,13 @@
+---
+- name: Test ping
+  hosts: all
+  gather_facts: no
+
+  tasks:
+
+    - name: Ping a los hosts
+      ansible.builtin.ping:
+
+    - name: Mostrar mensaje
+      ansible.builtin.debug:
+        msg: "AWX está funcionando correctamente 🚀"
